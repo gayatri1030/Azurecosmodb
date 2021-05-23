@@ -1,0 +1,19 @@
+module "cosmos-db" {
+  source = "../../Terraform_Modules/AzureCosmosDB"
+  resource_group_name = var.usr_resource_group_name
+  location = var.usr_location
+  environment = var.usr_environment
+  cosmos_db_account_name = var.usr_cosmos_db_account_name
+  cosmos_db_backup_type = var.usr_cosmos_db_backup_type
+  cosmos_db_geo_location = var.usr_cosmos_db_geo_location
+  cosmos_db_account_kind = var.usr_cosmos_db_account_kind
+  cosmos_db_consistency_policy = var.usr_cosmos_db_consistency_policy
+  cosmos_db_enable_analytical_storage = var.usr_cosmos_db_enable_analytical_storage
+  cosmos_db_mong_server_version = var.usr_cosmos_db_mong_server_version
+  cosmos_db_periodic_interval_in_minutes = var.usr_cosmos_db_periodic_interval_in_minutes
+  cosmos_db_periodic_retention_in_hours  = var.usr_cosmos_db_periodic_retention_in_hours
+  cosmos_db_public_network_access_enabled = var.usr_cosmos_db_public_network_access_enabled
+  cosmos_db_whitelist_ips = var.usr_cosmos_db_whitelist_ips
+  cosmos_db_virtual_network_filter_enabled = var.usr_cosmos_db_virtual_network_filter_enabled
+  cosmos_db_network_acl_bypass_enabled_for_azure_services = var.usr_cosmos_db_network_acl_bypass_enabled_for_azure_services
+}
